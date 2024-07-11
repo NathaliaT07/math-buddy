@@ -2,6 +2,7 @@ const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
 const option3 = document.getElementById("option3");
 const audio = document.getElementById("wrong");
+const audio2 = document.getElementById("right");
 
 const currentScore = document.getElementById("current-score");
 const timerDisplay = document.getElementById("timer");
@@ -91,6 +92,7 @@ function updateTime() {
 option1.addEventListener("click", function(){
     if (option1.innerHTML == answer){
         score++;
+        audio2.play();
         generateEquation();
         updateScore();
     } else {
@@ -101,6 +103,7 @@ option1.addEventListener("click", function(){
 option2.addEventListener("click", function(){
     if (option2.innerHTML == answer){
         score++;
+        audio2.play();
         generateEquation();
         updateScore();
     } else {
@@ -111,6 +114,7 @@ option2.addEventListener("click", function(){
 option3.addEventListener("click", function(){
     if (option3.innerHTML == answer){
         score++;
+        audio2.play();
         generateEquation();
         updateScore();
     } else {
