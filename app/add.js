@@ -49,11 +49,11 @@ function generateEquation(){
 
 function updateScore(){
     currentScore.textContent = score;
-}
+};
 
 function updateTimer() {
     timerDisplay.textContent = timeLeft;
-}
+};
 
 function startGame() {
     score = 0;
@@ -78,7 +78,7 @@ function startGame() {
             location.reload();
         }
     }, 1000)
-}
+};
 
 function updateTime() {
     timeLeft--;
@@ -86,7 +86,7 @@ function updateTime() {
     if(timeLeft === 0){
         alert("Your time is up! Your final score is " + score + ".");
     }
-}
+};
 
 option1.addEventListener("click", function(){
     if (option1.innerHTML == answer){
